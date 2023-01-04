@@ -1,0 +1,149 @@
+h1, h2, h3, h4
+{
+  color: $navbar-dark-hover-color;
+}
+
+a, .active
+{
+  color: $navbar-dark-hover-color;
+}
+
+.brand-name
+{
+  font-size: x-large;
+  color: $contrast-color;
+  display: inline-block;
+}
+
+.entry-title
+{
+  text-align: center;
+}
+
+
+.network-footer
+{
+  background: $navbar-dark-hover-color;
+  min-height: 5vh;
+  color: $contrast-color;
+  padding: 15px;
+  border-top: 3px solid $navbar-dark-hover-color;
+}
+
+.network-footer a
+{
+  color: $contrast-color;
+}
+
+.network-footer a:hover
+{
+  color: $contrast-color-hover;
+}
+
+.network-footer .nav-link {
+  padding: 0px;
+}
+
+.network-footer .dropdown-menu
+{
+	background: none;
+	border: 1px solid $contrast-color;
+}
+
+.network-footer ul.dropdown-menu.show {
+    background: $navbar-dark-hover-color;
+}
+
+.network-footer .dropdown-item:focus, 
+.network-footer .dropdown-item:hover
+{
+	background: none;
+}
+
+.network-nav
+{
+  border-bottom: 3px solid $navbar-dark-hover-color;
+  background: $navbar-dark-hover-color;
+  color: $contrast-color;
+}
+
+.network-nav .nav-link,
+.network-nav .nav-link a,
+.network-nav .navbar-brand,
+.network-nav .nav-link h1,
+.network-nav .nav-link h2,
+.network-nav .nav-link h3,
+.network-nav .nav-link h4
+{
+	color: $contrast-color
+}
+
+.network-nav .nav-link:hover,
+.network-nav .nav-link .active
+{
+	color: $contrast-color-hover
+}
+
+.network-nav .navbar-toggler
+{
+	border: 1px solid $contrast-color;
+	
+}
+
+.network-nav .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.footer-links {
+  list-style: none;
+  text-align: justify;
+}
+
+#wrapper-footer
+{
+  bottom:0px;
+  padding-bottom: 0px;
+}
+
+#index-wrapper, #page-wrapper
+{
+  min-height: 50vh;
+}
+
+.network-logo
+{
+  max-width: 300px;
+  padding-top: 15px;
+}
+
+div.cqc-widget, div.cqc-widget .cqc-container
+{
+  -webkit-border-radius: 15px !important;
+  border-radius: 15px !important;
+}
+
+.card-logos
+{
+  max-width: 250px;
+}
+
+.map-responsive
+{
+  max-width: 1140px;
+  margin: auto;
+}
+
+.map-responsive{
+  overflow:hidden;
+  padding-bottom:50vh;
+  position:relative;
+  height:0;
+}
+
+.map-responsive iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+}
