@@ -24,7 +24,7 @@ a, .active
 .network-footer
 {
   background: $navbar-dark-hover-color;
-  min-height: 5vh;
+  min-height: 7vh;
   color: $contrast-color;
   padding: 15px;
   border-top: 3px solid $navbar-dark-hover-color;
@@ -60,6 +60,11 @@ a, .active
 	background: none;
 }
 
+.network-15
+{
+  padding-bottom: 15px;
+}
+
 .network-nav
 {
   border-bottom: 3px solid $navbar-dark-hover-color;
@@ -73,7 +78,8 @@ a, .active
 .network-nav .nav-link h1,
 .network-nav .nav-link h2,
 .network-nav .nav-link h3,
-.network-nav .nav-link h4
+.network-nav .nav-link h4,
+.dropdown-header h6
 {
 	color: $contrast-color
 }

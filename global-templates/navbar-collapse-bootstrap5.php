@@ -7,26 +7,32 @@
  */
 
 // Exit if accessed directly.
-defined('ABSPATH') || exit;
+defined( 'ABSPATH' ) || exit;
 
-$container = get_theme_mod('understrap_container_type');
+$container = get_theme_mod( 'understrap_container_type' );
 ?>
 
-<nav id="main-nav" class="navbar navbar-expand-md network-nav" aria-labelledby="main-nav-label">
+<nav id="main-nav" class="navbar navbar-expand-xl network-nav" aria-labelledby="main-nav-label">
 
 	<h2 id="main-nav-label" class="screen-reader-text">
-		<?php esc_html_e('Main Navigation', 'understrap'); ?>
+		<?php esc_html_e( 'Main Navigation', 'understrap' ); ?>
 	</h2>
 
 
-	<div class="container-fluid">
+	<div class="<?php echo esc_attr( $container ); ?>">
 
 		<!-- Your site branding in the menu -->
-		<?php get_template_part('global-templates/navbar-branding'); ?>
+		<?php get_template_part( 'global-templates/navbar-branding' ); ?>
 
-		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-			aria-controls="navbarNavDropdown" aria-expanded="false"
-			aria-label="<?php esc_attr_e('Toggle navigation', 'understrap'); ?>">
+		<button
+			class="navbar-toggler me-1"
+			type="button"
+			data-bs-toggle="collapse"
+			data-bs-target="#navbarNavDropdown"
+			aria-controls="navbarNavDropdown"
+			aria-expanded="false"
+			aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>"
+		>
 			<span class="navbar-toggler-icon"></span>
 		</button>
 
@@ -34,20 +40,20 @@ $container = get_theme_mod('understrap_container_type');
 		<?php
 		wp_nav_menu(
 			array(
-				'theme_location' => 'primary',
+				'theme_location'  => 'primary',
 				'container_class' => 'collapse navbar-collapse',
-				'container_id' => 'navbarNavDropdown',
-				'menu_class' => 'navbar-nav me-auto',
-				'fallback_cb' => '',
-				'menu_id' => 'main-menu',
-				'depth' => 2,
-				'walker' => new Understrap_WP_Bootstrap_Navwalker(),
+				'container_id'    => 'navbarNavDropdown',
+				'menu_class'      => 'navbar-nav',
+				'fallback_cb'     => '',
+				'menu_id'         => 'main-menu',
+				'depth'           => 2,
+				'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
 			)
 		);
 		?>
 
 		<div class="d-flex justify-content-end order-3">
-			<span class="d-flex flex-nowrap align-items-center">
+			<span class="d-flex">
 				+ 44 (0) 3333 441335
 			</span>
 		</div>
