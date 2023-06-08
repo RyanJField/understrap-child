@@ -25,7 +25,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<?php get_template_part( 'global-templates/navbar-branding' ); ?>
 
 		<button
-			class="navbar-toggler me-1"
+			class="navbar-toggler me-2"
 			type="button"
 			data-bs-toggle="collapse"
 			data-bs-target="#navbarNavDropdown"

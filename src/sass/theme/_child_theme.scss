@@ -44,6 +44,16 @@ a, .active
   padding: 0px;
 }
 
+/* Remove outline for non-keyboard :focus */
+*:focus:not(.focus-visible) {
+  outline: none;
+}
+
+/* Optional: Customize .focus-visible */
+.focus-visible {
+  outline-color: $contrast-color;
+}
+
 .network-footer .dropdown-menu
 {
 	background: none;
@@ -57,12 +67,19 @@ a, .active
 .network-footer .dropdown-item:focus, 
 .network-footer .dropdown-item:hover
 {
-	background: none;
+	background: $navbar-dark-hover-color;
 }
 
-.network-15
+.dropdown-item
 {
-  padding-bottom: 15px;
+  white-space: normal;
+}
+
+@media (min-width: 992px) {
+  .dropdown-item
+{
+  white-space: nowrap;
+}
 }
 
 .network-nav
@@ -79,6 +96,8 @@ a, .active
 .network-nav .nav-link h2,
 .network-nav .nav-link h3,
 .network-nav .nav-link h4,
+.network-nav .nav-link h5,
+.network-nav .nav-link h6
 .dropdown-header h6
 {
 	color: $contrast-color
@@ -152,4 +171,14 @@ div.cqc-widget, div.cqc-widget .cqc-container
   height:100%;
   width:100%;
   position:absolute;
+}
+
+ul.dropdown-menu.show {
+  max-width: calc(100vw - 3px);
+}
+
+a[href^="tel"] {
+  color: inherit; /* Inherit text color of parent element. */
+  text-decoration: none; /* Remove underline. */
+  /* Additional css `propery: value;` pairs here */
 }

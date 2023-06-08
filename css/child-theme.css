@@ -15002,6 +15002,16 @@ a, .active {
   padding: 0px;
 }
 
+/* Remove outline for non-keyboard :focus */
+*:focus:not(.focus-visible) {
+  outline: none;
+}
+
+/* Optional: Customize .focus-visible */
+.focus-visible {
+  outline-color: #FFF;
+}
+
 .network-footer .dropdown-menu {
   background: none;
   border: 1px solid #FFF;
@@ -15013,13 +15023,18 @@ a, .active {
 
 .network-footer .dropdown-item:focus,
 .network-footer .dropdown-item:hover {
-  background: none;
+  background: #cf2e2e;
 }
 
-.network-15 {
-  padding-bottom: 15px;
+.dropdown-item {
+  white-space: normal;
 }
 
+@media (min-width: 992px) {
+  .dropdown-item {
+    white-space: nowrap;
+  }
+}
 .network-nav {
   border-bottom: 3px solid #cf2e2e;
   background: #cf2e2e;
@@ -15037,8 +15052,12 @@ a, .active {
 .network-nav .nav-link .h3,
 .network-nav .nav-link h4,
 .network-nav .nav-link .h4,
-.dropdown-header h6,
-.dropdown-header .h6 {
+.network-nav .nav-link h5,
+.network-nav .nav-link .h5,
+.network-nav .nav-link h6 .dropdown-header h6,
+.network-nav .nav-link .h6 .dropdown-header h6,
+.network-nav .nav-link h6 .dropdown-header .h6,
+.network-nav .nav-link .h6 .dropdown-header .h6 {
   color: #FFF;
 }
 
@@ -15100,6 +15119,16 @@ div.cqc-widget, div.cqc-widget .cqc-container {
   height: 100%;
   width: 100%;
   position: absolute;
+}
+
+ul.dropdown-menu.show {
+  max-width: calc(100vw - 3px);
+}
+
+a[href^=tel] {
+  color: inherit; /* Inherit text color of parent element. */
+  text-decoration: none; /* Remove underline. */
+  /* Additional css `propery: value;` pairs here */
 }
 
 .has-blue-color,
