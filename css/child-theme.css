@@ -15030,6 +15030,11 @@ a, .active {
   white-space: normal;
 }
 
+.dropdown-menu {
+  --bs-dropdown-header-color: $alternative-color:
+  --bs-dropdown-divider-bg: $alternative-color;
+}
+
 @media (min-width: 992px) {
   .dropdown-item {
     white-space: nowrap;
@@ -15054,10 +15059,8 @@ a, .active {
 .network-nav .nav-link .h4,
 .network-nav .nav-link h5,
 .network-nav .nav-link .h5,
-.network-nav .nav-link h6 .dropdown-header h6,
-.network-nav .nav-link .h6 .dropdown-header h6,
-.network-nav .nav-link h6 .dropdown-header .h6,
-.network-nav .nav-link .h6 .dropdown-header .h6 {
+.network-nav .nav-link h6,
+.network-nav .nav-link .h6 {
   color: #FFF;
 }
 
