@@ -5497,4 +5497,9 @@ body.understrap-no-sidebar .wp-block-cover.alignwide {
   font-weight: 500;
 }
 
+:root {
+  --bs-link-color: $navbar-dark-hover-color;
+  --bs-link-hover-color: $navbar-dark-color;
+}
+
 /*# sourceMappingURL=custom-editor-style.css.map */

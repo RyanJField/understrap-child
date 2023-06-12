@@ -14964,11 +14964,7 @@ figure.woocommerce-product-gallery__wrapper {
   display: block;
 }
 
-h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
-  color: #cf2e2e;
-}
-
-a, .active {
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   color: #cf2e2e;
 }
 
@@ -15132,6 +15128,23 @@ a[href^=tel] {
   color: inherit; /* Inherit text color of parent element. */
   text-decoration: none; /* Remove underline. */
   /* Additional css `propery: value;` pairs here */
+}
+
+.dropdown-item.active, .dropdown-item:active {
+  color: dimgray;
+}
+
+a.dropdown-item {
+  outline-color: transparent;
+}
+
+.ugb-feature-grid__content a {
+  color: inherit !important;
+}
+
+:root {
+  --bs-link-color: $navbar-dark-hover-color;
+  --bs-link-hover-color: $navbar-dark-color;
 }
 
 .has-blue-color,

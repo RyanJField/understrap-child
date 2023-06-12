@@ -35,3 +35,8 @@
 	font-size: $h1-font-size;
 	font-weight: $headings-font-weight;
 }
+
+:root {
+	--bs-link-color: $navbar-dark-hover-color;
+	--bs-link-hover-color: $navbar-dark-color;
+  }
