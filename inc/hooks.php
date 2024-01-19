@@ -25,7 +25,7 @@ if ( ! function_exists( 'understrap_add_site_info' ) ) {
 	function understrap_add_site_info() {
 		$the_theme = wp_get_theme();
 
-		$site_info = "© Network Medical Group " . date('Y');
+		$site_info = "© Network Medical Occupational Health Ltd " . date('Y');
 
 		// Check if customizer site info has value.
 		if ( get_theme_mod( 'understrap_site_info_override' ) ) {

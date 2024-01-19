@@ -49,8 +49,7 @@ $container = get_theme_mod( 'understrap_container_type' );
             <div class="col-12 col-md-6 col-lg-3 text-center pb-3"><img src="<?php echo get_theme_file_uri( '/img/card-logos.png' ) ?>" class="img-fluid card-logos"></div>
             <div class="col-12 col-md-4 pb-3">			
             <?php understrap_site_info(); ?>
-            <p>Network Medical Services Ltd Company Number: 10375514	<br>
-                Network Medical Occupational Health Company Number: 12824862<br>
+            <p> Network Medical Occupational Health Ltd Company Number: 12824862<br>
                 Registered in England and Wales <br>
             </p>
             </div>
