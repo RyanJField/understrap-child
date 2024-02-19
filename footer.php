@@ -19,7 +19,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 	<div class="network-footer w-100">
         <div class="row">
-            <div class="col-12 col-md-6 col-lg-3 text-center pb-3">
+            <div class="col-12 col-md-6 col-lg-4 text-center pb-3">
                 <?php wp_nav_menu(
                     array(
                         'theme_location'  => 'footer',
@@ -32,7 +32,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                         'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
                     )
                 ); ?></div>
-            <div class="col-12 col-md-6 col-lg-3 text-center pb-3">
+            <div class="col-12 col-md-6 col-lg-2 text-center pb-3">
 				<div class="row align-items-center text-center">
                     <div class="col">
                         <a href="https://www.facebook.com/networkmedicalservices/" target="_blank"> <img class="img-fluid social-icon" src="<?php echo get_theme_file_uri( '/img/social/fb.png' ) ?>"></a>
