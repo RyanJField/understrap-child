@@ -54,7 +54,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		<div class="d-flex justify-content-end order-3">
 			<span class="d-flex">
-				+ 44 (0) 3333 441335
+				<a href="contact-us">
+					<i class="fa fa-envelope font-xx-lg" title ="Contact Us"></i>
+				</a>
 			</span>
 		</div>
 
